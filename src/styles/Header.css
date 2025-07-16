@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    background-color: var(--card-background);
+    box-shadow: 0 2px 8px var(--shadow-color);
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.add-button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color var(--transition-speed) ease;
+}
+
+.add-button:hover {
+    background-color: var(--button-hover);
+}
+
+.add-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99, 99, 255, 0.3);
+}

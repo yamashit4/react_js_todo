@@ -1,0 +1,20 @@
+.task-list {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    gap: 20px;
+    justify-content: start;
+}
+
+@media (max-width: 768px) {
+    .task-list {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .task-list {
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        justify-content: center;
+    }
+}
